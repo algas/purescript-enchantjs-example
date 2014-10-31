@@ -1,0 +1,30 @@
+{
+  "name": "purescript-enchantjs-example",
+  "version": "0.0.1",
+  "description": "Example of purescript-enchantjs",
+  "keywords": ["purescript"],
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "output",
+    "tests",
+    "js",
+    "tmp",
+    "bower.json",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "purescript-arrays"               : "*",
+    "purescript-maybe"                : "*",
+    "purescript-foreign"              : "*",
+    "purescript-foldable-traversable" : "*",
+    "purescript-enchantjs"            : "*",
+    "purescript-easy-ffi"             : "*"
+  },
+  "devDependencies": {
+    "purescript-math"                 : "*",
+    "purescript-quickcheck"           : "*"
+  }
+}
