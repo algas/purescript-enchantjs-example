@@ -20,12 +20,19 @@ module.exports = function(grunt) {
       }
     },
 
+    watch: {
+      files: ["<%=libFiles%>"],
+      tasks: ["psc:all"]
+    },
+
     dotPsci: ["<%=libFiles%>"]
 
   });
 
+  grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-purescript");
 
   grunt.registerTask("main", ["psc:all"]);
-  grunt.registerTask("default", ["main", "dotPsci"]);
+  // grunt.registerTask("default", ["main", "dotPsci"]);
+  grunt.registerTask("default", ["watch"]);
 };
