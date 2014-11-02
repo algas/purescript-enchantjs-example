@@ -20,4 +20,5 @@ cabal.sandbox.config
 *.sublime-project
 *.sublime-workspace
 *.png
+*.gif
 /build
